@@ -127,3 +127,4 @@ This is a full-stack bank management application that allows clients to manage t
 * Ensure CORS is configured in the backend to allow frontend requests.
 * Validate all inputs on both frontend and backend.
 * Sensitive information (JWT secret, DB passwords) should be stored securely (e.g., environment variables).
+

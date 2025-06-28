@@ -11,6 +11,7 @@ import com.bankapp.bank_management.util.RibValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -102,6 +103,11 @@ public class BankAccountService {
 
         return bankAccountRepository.findAllByClient(client);
     }
+    public Client getClientByUsername(String username) {
+        return clientRepository.findByEmail(username)
+                .orElseThrow(() -> new UsernameNotFoundException("Client not found"));
+    }
+
 
     // NEW: Get most recently moved account (with latest operation)
     public BankAccount getMostRecentlyMovedAccount(String username) {
