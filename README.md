@@ -7,7 +7,7 @@ This is a full-stack bank management application that allows clients to manage t
 
 * **Backend**: Spring Boot REST API with JWT authentication and role-based authorization.
 * **Frontend**: React application for client dashboard and bank operations.
-* **Database**: JPA / Hibernate with a relational database (e.g., MySQL, MariaDB).
+* **Database**: JPA / Hibernate with a relational database MySQL.
 
 ---
 
@@ -30,7 +30,7 @@ This is a full-stack bank management application that allows clients to manage t
 * Java 17+
 * Maven or Gradle
 * Node.js 18+
-* A relational database (MySQL, MariaDB, PostgreSQL, etc.)
+* A relational database MySQL
 * Postman or similar tool for API testing
 
 ---
@@ -43,7 +43,7 @@ This is a full-stack bank management application that allows clients to manage t
 
    ```bash
    git clone https://github.com/yourusername/bank-management.git
-   cd bank-management/backend
+   cd bank-management/bank-management
    ```
 
 2. Configure your database settings in `application.properties` or `application.yml`:
@@ -70,7 +70,7 @@ This is a full-stack bank management application that allows clients to manage t
 1. Navigate to the frontend directory:
 
    ```bash
-   cd ../frontend
+   cd ../e-bank
    ```
 
 2. Install dependencies:
@@ -127,15 +127,3 @@ This is a full-stack bank management application that allows clients to manage t
 * Ensure CORS is configured in the backend to allow frontend requests.
 * Validate all inputs on both frontend and backend.
 * Sensitive information (JWT secret, DB passwords) should be stored securely (e.g., environment variables).
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-## Contact
-
-For questions or support, please contact \[[your.email@example.com](mailto:your.email@example.com)]
